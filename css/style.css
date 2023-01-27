@@ -30,6 +30,9 @@ ul {
   font-family: "Public Sans", sans-serif;
   /* --webkit-font-smoothing:antialiased; */
 }
+body{
+  overflow-x: hidden;
+}
 
 /* for image responsive */
 img {
@@ -55,6 +58,8 @@ nav {
 nav ul {
   display: flex;
   list-style-type: none;
+  align-items: center;
+
 }
 nav ul li {
     margin-left: 20px;
@@ -77,6 +82,69 @@ nav ul li a {
 .btn:hover{
     background: linear-gradient(to right,var(--Bright-Cyan),var(--Lime-Green));
 }
+
+/* Slider section css start here */
+
+.header-wrap{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 55px;
+
+}
+
+.header-section{
+  background: var(--Very-Light-Gray);
+  /* position: relative; */
+}
+
+.header-text{
+  flex: 1 0 40%;
+}
+
+.header-images{
+  flex: 1 0 60%;
+  position: relative;
+}
+
+.header-images img:first-child{
+  position: relative;
+  top: -36px;
+  transform: scale(1.6);
+  bottom: 0;
+  right: -200px;
+}
+
+.nav-section{
+  z-index: 1;
+  position: relative;
+  background: var(--White);
+}
+
+.header-images img:last-child{
+  position: absolute;
+  top: -155px;
+  transform: scale(1.1);
+  bottom: 0;
+  right: -190px;
+}
+
+
+.header-text h1{
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.header-text p{
+  margin-bottom: 30px;
+  line-height: 1.4;
+  color:var(--Grayish-Blue)
+}
+
+
+
 
 
 
